@@ -52,22 +52,39 @@
   animation: slowPulse 8s ease-in-out infinite alternate;
 }
 
-/* Foreground Content */
+/* Foreground Content (Full Screen Glass Modal) */
 .content-container {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   z-index: 10;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  animation: slideUpFade 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  padding: 2rem;
-  background: rgba(20, 25, 35, 0.4);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  justify-content: space-between;
+  animation: fadeInModal 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  padding: 6rem 2rem 4rem 2rem;
+  box-sizing: border-box;
+  background: rgba(10, 15, 25, 0.4);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.top-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2vh;
+}
+
+.bottom-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2vh;
 }
 
 .construction-title {
@@ -138,17 +155,13 @@
   }
 }
 
-@keyframes slideUpFade {
+@keyframes fadeInModal {
   0% {
     opacity: 0;
-    transform: translateY(40px);
-    filter: blur(10px);
   }
 
   100% {
     opacity: 1;
-    transform: translateY(0);
-    filter: blur(0px);
   }
 }
 

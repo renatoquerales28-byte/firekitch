@@ -14,12 +14,17 @@ function App() {
         />
       </div>
 
-      {/* Foreground Content */}
+      {/* Foreground Content (Full Screen Modal) */}
       <div className="content-container">
-        <h1 className="construction-title">En Construcción</h1>
-        <p className="construction-subtitle">Estamos cocinando algo increíble.</p>
-        <div className="loading-bar-container">
-          <div className="loading-progress"></div>
+        <div className="top-section">
+          <h1 className="construction-title">En Construcción</h1>
+          <p className="construction-subtitle">Estamos cocinando algo increíble.</p>
+        </div>
+
+        <div className="bottom-section">
+          <div className="loading-bar-container">
+            <div className="loading-progress"></div>
+          </div>
         </div>
       </div>
     </main>
