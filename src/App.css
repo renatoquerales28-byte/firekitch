@@ -39,8 +39,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0.8;
-  /* Make the logo clearly visible */
+  opacity: 1;
+  /* Maximum opacity for the logo itself */
 }
 
 .firekitch-logo-bg {
@@ -67,9 +67,11 @@
   animation: fadeInModal 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   padding: 6rem 2rem 4rem 2rem;
   box-sizing: border-box;
-  background: rgba(10, 15, 25, 0.4);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background: rgba(10, 15, 25, 0.15);
+  /* Much lighter dark tint */
+  backdrop-filter: blur(6px);
+  /* Very low blur to see the details of the logo */
+  -webkit-backdrop-filter: blur(6px);
 }
 
 .top-section {
