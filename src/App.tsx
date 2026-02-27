@@ -16,12 +16,11 @@ function App() {
 
       {/* Foreground Content (Full Screen Modal) */}
       <div className="content-container">
-        <div className="top-section">
-          <h1 className="construction-title">En Construcción</h1>
-          <p className="construction-subtitle">Estamos cocinando algo increíble.</p>
-        </div>
+        {/* Empty top to keep space clear for the logo */}
+        <div className="top-section"></div>
 
         <div className="bottom-section">
+          <p className="construction-subtitle">Estamos cocinando algo increíble.</p>
           <div className="loading-bar-container">
             <div className="loading-progress"></div>
           </div>
